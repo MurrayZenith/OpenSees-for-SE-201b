@@ -64,14 +64,6 @@
 	"buffers":
 	[
 		{
-			"file": "GRAVITY.tcl",
-			"settings":
-			{
-				"buffer_size": 1180,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "HW3.tcl",
 			"settings":
 			{
@@ -83,24 +75,9 @@
 			"file": "INPUT_elem.tcl",
 			"settings":
 			{
-				"buffer_size": 4564,
+				"buffer_size": 4640,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "INPUT_mat.tcl",
-			"settings":
-			{
-				"buffer_size": 309,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "INPUT_sec.tcl",
-			"settings":
-			{
-				"buffer_size": 691,
-				"line_ending": "Windows"
 			}
 		},
 		{
@@ -113,34 +90,10 @@
 			}
 		},
 		{
-			"file": "INPUT_nodes.tcl",
+			"file": "GRAVITY.tcl",
 			"settings":
 			{
-				"buffer_size": 5517,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "RECORD.tcl",
-			"settings":
-			{
-				"buffer_size": 1006,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "TRANSF.tcl",
-			"settings":
-			{
-				"buffer_size": 324,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "UNITS.tcl",
-			"settings":
-			{
-				"buffer_size": 1540,
+				"buffer_size": 1180,
 				"line_ending": "Windows"
 			}
 		}
@@ -238,18 +191,22 @@
 	},
 	"file_history":
 	[
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW/INPUT_sec.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW/INPUT_mat.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW/INPUT_nodes.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW/RECORD.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW/TRANSF.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW/UNITS.tcl",
 		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW/HW3.tcl",
 		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW/GRAVITY.tcl",
 		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW/INPUT_elem.tcl",
 		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW/PO.tcl",
-		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW/INPUT_nodes.tcl",
 		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/Pushover_example/pushover_concentrated.tcl",
 		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW3 from jintaoZ/partA/INPUT_nodes.tcl",
 		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW3 from jintaoZ/partA/GRAVITY.tcl",
 		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW3 from jintaoZ/partA/PO.tcl",
 		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW3 from jintaoZ/partA/INPUT_elem.tcl",
 		"/G/OneDrive - UC San Diego/Structures/201 B/HW/from jintaoZ/partA/RECORDERS.tcl",
-		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW/TRANSF.tcl",
 		"/G/OneDrive - UC San Diego/Structures/201 B/HW/from jintaoZ/partA/PO.tcl",
 		"/G/OneDrive - UC San Diego/Structures/201 B/HW/from jintaoZ/partA/GRAVITY.tcl",
 		"/G/OneDrive - UC San Diego/Structures/201 B/HW/from jintaoZ/partA/INPUT_elem.tcl",
@@ -258,15 +215,11 @@
 		"/G/OneDrive - UC San Diego/Structures/201 B/HW/from jintaoZ/partA/INPUT_mat.tcl",
 		"/G/OneDrive - UC San Diego/Structures/201 B/HW/from jintaoZ/partA/go.tcl",
 		"/G/OneDrive - UC San Diego/Structures/201 B/HW/from jintaoZ/partA/TRANSF.tcl",
-		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW/INPUT_sec.tcl",
-		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW/INPUT_mat.tcl",
-		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW/UNITS.tcl",
 		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/Material for HW 3/Material for HW 3/Model Files/go.tcl",
 		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/OpenSees Tutorial 1/OpenSees Tutorial 1/3D_Frame.tcl",
 		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/Material for HW 3/Material for HW 3/Model Files/PO.tcl",
 		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/Material for HW 3/Material for HW 3/Model Files/GRAVITY.tcl",
 		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/Material for HW 3/Material for HW 3/Model Files/RECORDERS.tcl",
-		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW/RECORD.tcl",
 		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/OpenSees Tutorial 1/OpenSees Tutorial 1/gravity.tcl",
 		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/Pushover_example/pushover_distributed.tcl",
 		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW/test.tcl",
@@ -350,11 +303,97 @@
 	"groups":
 	[
 		{
-			"selected": 9,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
+					"file": "HW3.tcl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2548,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1145,
+								1145
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/OpenSees/OpenSees.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 456.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "INPUT_elem.tcl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4640,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								599,
+								599
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/OpenSees/OpenSees.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "PO.tcl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4095,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								900,
+								900
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/OpenSees/OpenSees.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"file": "GRAVITY.tcl",
 					"semi_transient": false,
 					"settings":
@@ -379,262 +418,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "HW3.tcl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2548,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/OpenSees/OpenSees.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "INPUT_elem.tcl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4564,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/OpenSees/OpenSees.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "INPUT_mat.tcl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 309,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/OpenSees/OpenSees.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "INPUT_sec.tcl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 691,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/OpenSees/OpenSees.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "PO.tcl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4095,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/OpenSees/OpenSees.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "INPUT_nodes.tcl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5517,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/OpenSees/OpenSees.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
 					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "RECORD.tcl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1006,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/OpenSees/OpenSees.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "TRANSF.tcl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 324,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/OpenSees/OpenSees.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "UNITS.tcl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1540,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								182,
-								182
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/OpenSees/OpenSees.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -673,7 +457,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 389.0
+		"height": 301.0
 	},
 	"output.find_results":
 	{
