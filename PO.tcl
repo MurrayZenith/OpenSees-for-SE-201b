@@ -53,9 +53,10 @@ set NSteps [expr int(abs($maximumDisplacement/$displacementIncrement))] ;
 
 # Define analysis parameters (Fill in the blanks)
 # integrator DisplacementControl $node $dof $incr <$numIter $ΔUmin $ΔUmax> 
-integrator DisplacmentControl 10201 $controlDOF $displacementIncrement; # See OpenSees Wiki
+set Tol 1.0e-6
+integrator DisplacementControl 10201 $controlDOF $displacementIncrement; # See OpenSees Wiki
 system BandGeneral;
-test NormDispIncr 1.0e-6 200;
+test NormDispIncr $Tol 500;
 numberer Plain;
 constraints Plain;
 algorithm Newton;

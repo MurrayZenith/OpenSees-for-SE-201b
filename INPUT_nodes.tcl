@@ -6,12 +6,13 @@ set Nodes {}; # This will be used to store all nodeTags created. This is useful 
 # ##########################################################
 # Define Base Nodes
 # ##########################################################
-set C_dim1 220.0;
+set C_dim1 110.0;
 set C_dim2 100.928;
 set C_dim3 5.5;
 set C_dim4 37.0;
-set C_dim5 [expr $C_dim2*2+$C_dim3];
 set C_dim6 128.0;
+set C_dim5 [expr $C_dim2*2+$C_dim6];
+
 
 #node $nodeTag (ndm $coords)
 node 1100 0.0 0.0 0.0; #Wall 1
@@ -92,11 +93,11 @@ for {set i 1} {$i <= $nStory} {incr i 1} {
 	puts $ExportID "node [expr 1000*$i+100+$j+1] 0.0 $C_dim1 $height;"
 	puts $ExportID "node [expr 1000*$i+100+$j+2] 0.0 -$C_dim1 $height;"
 	puts $ExportID "node [expr 1000*$i+100+$j+3] $C_dim2 $C_dim1 $height;"
-	puts $ExportID "node [expr 1000*$i+100+$j+4] -$C_dim2 -$C_dim1 $height;"
+	puts $ExportID "node [expr 1000*$i+100+$j+4] $C_dim2 -$C_dim1 $height;"
 	puts $ExportID "node [expr 1000*$i+100+$j+5] $C_dim2 $C_dim1 [expr $height-$C_dim3];"
-	puts $ExportID "node [expr 1000*$i+100+$j+6] -$C_dim2 -$C_dim1 [expr $height-$C_dim3];"
+	puts $ExportID "node [expr 1000*$i+100+$j+6] $C_dim2 -$C_dim1 [expr $height-$C_dim3];"
 	puts $ExportID "node [expr 1000*$i+100+$j+7] $C_dim2 $C_dim1 [expr $height-$C_dim3-$C_dim4];"
-	puts $ExportID "node [expr 1000*$i+100+$j+8] -$C_dim2 -$C_dim1 [expr $height-$C_dim3-$C_dim4];"
+	puts $ExportID "node [expr 1000*$i+100+$j+8] $C_dim2 -$C_dim1 [expr $height-$C_dim3-$C_dim4];"
 
 	node [expr 1000*$i+200+$j+1] $C_dim5 $C_dim1 $height;
 	node [expr 1000*$i+200+$j+2] $C_dim5 -$C_dim1 $height;

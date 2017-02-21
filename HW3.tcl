@@ -57,7 +57,7 @@ puts "MODEL SET UP"
 
 # PUSHOVER ANALYSIS --------------------------------------------------------------------------
 
-set pushDir EW;
+set pushDir "EW";
 # set pushDir NS;
 
 source "PO.tcl"
