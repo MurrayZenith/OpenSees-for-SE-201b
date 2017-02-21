@@ -1,27 +1,68 @@
 # SE 201B: NONLINEAR STRUCTURAL ANALYSIS (WI 2017)
+# Maorui Zeng A53211064
 # HW3 
 wipe; 
+
+#              ================================
+# 				  Global Coordinate System
+#              ================================
+#           ____________		 _____________		   ^ Y-axis
+#          |  __________|=======|___________  |		   |        
+#          | |                              | |		   |        
+#          | |                              | |		   |          
+#          | |                              | |        o-------->  X-axis
+#          | |                              | |        
+#          | |                              | |        
+#          | |                              | |        
+#          | |__________          __________| |        
+#          |____________|========|____________|
+#          
+
 
 # Define the model builder, ndm=#dimension, ndf=#dofs
 model BasicBuilder -ndm 3 -ndf 6;
 
-# SETUP DATA DIRECTORY FOR SAVING OUTPUTS --------------------------------------------
-set dataDir "Results";	# Set up name of data directory
-file mkdir $dataDir; # Create data directory
-
 source UNITS.tcl;
+puts "MODEL SET-UP OK"
 
-# DEFINE NODES -----------------------------------------------------------------------
-set Lx [expr 24.0*$ft];
-set Ly [expr 15.0*$ft];
-set Lz [expr 18.0*$ft];
 
-#node $nodeTag (ndm $coords) <-mass (ndf $massValues)>
-node 1	0.0	0.0	$Lz;
-node 2	$Lx	0.0	$Lz;
-node 3	$Lx	0.0	0.0;
-node 4	0.0	0.0	0.0;
-node 5	0.0	$Ly	$Lz;
-node 6	$Lx	$Ly	$Lz;
-node 7	$Lx	$Ly	0.0;
-node 8	0.0	$Ly	0.0;
+
+
+# SET MODEL PARAMETERS ----------------------------------------------------------------------------------------------------------------------------------
+set ExportID [open "modelData.txt" "w"]; # Open File to write node and element information for plotting model in MATLAB (MATLAB file provided)
+
+source "INPUT_nodes.tcl"; 
+puts "NODES OK"
+
+# MATERIAL PARAMETERS ----------------------------------------------------------------------------------------------------------------------------------------------
+source "INPUT_mat.tcl"; # Sources the user defined file INPUT_mat.tcl which contains material defintions based on parameters defined above
+puts "MATERIALS OK"
+
+# ELEMENTS PARAMETERS ----------------------------------------------------------------------------------------------------------------------------------------------
+source "INPUT_sec.tcl"; # Sources the user defined file INPUT_sec.tcl which contains section defintions based on parameters defined above
+puts "SECTIONS OK"
+
+source "TRANSF.tcl"; # Sources the user defined file TRANSF.tcl which contains geometric transformation definitions
+puts "TRANSFORMATIONS OK"
+
+source "INPUT_elem.tcl";
+puts "ELEMENTS OK"
+
+# GRAVITY ANALYSIS --------------------------------------------------------------------------
+source "GRAVITY.tcl"
+puts "MODEL SET UP"
+
+# SETUP DATA DIRECTORY AND RECORD OUTPUTS --------------------------------------------
+
+
+# PUSHOVER ANALYSIS --------------------------------------------------------------------------
+
+set pushDir EW;
+# set pushDir NS;
+
+source "PO.tcl"
+
+
+# End of Analysis
+close $ExportID
+wipe;
