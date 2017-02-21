@@ -31,6 +31,17 @@ if {$pushDir == "EW"} {
 	pattern Plain $patternTagPush "Linear" {
 		# Apply inverted triangular lateral loads for each floor on both walls at the top node (for that floor) along +y direction.
 		# Make sure that the loads for each floor sum up to 1/2 for one wall; (YOU WILL SEE THE BENEFIT OF THIS LATER)
+		load 1101  0.0 [expr 0.5*1.0/55*$lat] 	0.0 0.0 0.0 0.0 ;
+		load 2101  0.0 [expr 0.5*2.0/55*$lat] 	0.0 0.0 0.0 0.0 ;
+		load 3101  0.0 [expr 0.5*3.0/55*$lat] 	0.0 0.0 0.0 0.0 ;
+		load 4101  0.0 [expr 0.5*4.0/55*$lat] 	0.0 0.0 0.0 0.0 ;
+		load 5101  0.0 [expr 0.5*5.0/55*$lat] 	0.0 0.0 0.0 0.0 ;
+		load 6101  0.0 [expr 0.5*6.0/55*$lat] 	0.0 0.0 0.0 0.0 ;
+		load 7101  0.0 [expr 0.5*7.0/55*$lat] 	0.0 0.0 0.0 0.0 ;
+		load 8101  0.0 [expr 0.5*8.0/55*$lat] 	0.0 0.0 0.0 0.0 ;
+		load 9101  0.0 [expr 0.5*9.0/55*$lat] 	0.0 0.0 0.0 0.0 ;
+		load 10101 0.0 [expr 0.5*10.0/55*$lat]	0.0 0.0 0.0 0.0 ;
+
 		load 1201  0.0 [expr 0.5*1.0/55*$lat] 	0.0 0.0 0.0 0.0 ;
 		load 2201  0.0 [expr 0.5*2.0/55*$lat] 	0.0 0.0 0.0 0.0 ;
 		load 3201  0.0 [expr 0.5*3.0/55*$lat] 	0.0 0.0 0.0 0.0 ;

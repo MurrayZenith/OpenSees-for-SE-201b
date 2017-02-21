@@ -26,6 +26,8 @@ source UNITS.tcl;
 puts "MODEL SET-UP OK"
 
 
+set pushDir "NS";
+# set pushDir NS;
 
 
 # SET MODEL PARAMETERS ----------------------------------------------------------------------------------------------------------------------------------
@@ -45,20 +47,19 @@ puts "SECTIONS OK"
 source "TRANSF.tcl"; # Sources the user defined file TRANSF.tcl which contains geometric transformation definitions
 puts "TRANSFORMATIONS OK"
 
-source "INPUT_elem.tcl";
+if {$pushDir == "EW"} {
+	source "INPUT_elem_EW.tcl";
+} elseif {$pushDir == "NS"} {
+	source "INPUT_elem_NS.tcl"
+}
 puts "ELEMENTS OK"
 
 # GRAVITY ANALYSIS --------------------------------------------------------------------------
 source "GRAVITY.tcl"
 puts "MODEL SET UP"
 
-# SETUP DATA DIRECTORY AND RECORD OUTPUTS --------------------------------------------
-
-
 # PUSHOVER ANALYSIS --------------------------------------------------------------------------
 
-set pushDir "EW";
-# set pushDir NS;
 
 source "PO.tcl"
 
