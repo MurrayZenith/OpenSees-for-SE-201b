@@ -62,23 +62,23 @@ for {set i 1} {$i <= $nStory} {incr i 1} {
 	# ########################################################################################################################
 	# Add elements as per element command in OpenSees Wiki, and write element command line to $ExportID
 
-	# rigidLink beam $jNodeTag_1 [expr $jNodeTag_1+1];
-	# rigidLink beam $jNodeTag_1 [expr $jNodeTag_1+2];
-	# rigidLink beam $jNodeTag_1 [expr $jNodeTag_1+3];
-	# rigidLink beam $jNodeTag_1 [expr $jNodeTag_1+4];
-	rigidLink beam $jNodeTag_1 [expr $jNodeTag_1+5];
-	rigidLink beam $jNodeTag_1 [expr $jNodeTag_1+6];
-	rigidLink beam $jNodeTag_1 [expr $jNodeTag_1+7];
-	rigidLink beam $jNodeTag_1 [expr $jNodeTag_1+8];
+	rigidLink bar $jNodeTag_1 [expr $jNodeTag_1+1];
+	rigidLink bar $jNodeTag_1 [expr $jNodeTag_1+2];
+	rigidLink bar [expr $jNodeTag_1+1] [expr $jNodeTag_1+3];
+	rigidLink bar [expr $jNodeTag_1+2] [expr $jNodeTag_1+4];
+	rigidLink bar [expr $jNodeTag_1+3] [expr $jNodeTag_1+5];
+	rigidLink bar [expr $jNodeTag_1+4] [expr $jNodeTag_1+6];
+	rigidLink bar [expr $jNodeTag_1+5] [expr $jNodeTag_1+7];
+	rigidLink bar [expr $jNodeTag_1+6] [expr $jNodeTag_1+8];
 
-	# rigidLink beam $jNodeTag_2 [expr $jNodeTag_2+1];
-	# rigidLink beam $jNodeTag_2 [expr $jNodeTag_2+2];
-	# rigidLink beam $jNodeTag_2 [expr $jNodeTag_2+3];
-	# rigidLink beam $jNodeTag_2 [expr $jNodeTag_2+4];
-	rigidLink beam $jNodeTag_2 [expr $jNodeTag_2+5];
-	rigidLink beam $jNodeTag_2 [expr $jNodeTag_2+6];
-	rigidLink beam $jNodeTag_2 [expr $jNodeTag_2+7];
-	rigidLink beam $jNodeTag_2 [expr $jNodeTag_2+8];
+	rigidLink bar $jNodeTag_2 [expr $jNodeTag_2+1];
+	rigidLink bar $jNodeTag_2 [expr $jNodeTag_2+2];
+	rigidLink bar [expr $jNodeTag_2+1] [expr $jNodeTag_2+3];
+	rigidLink bar [expr $jNodeTag_2+2] [expr $jNodeTag_2+4];
+	rigidLink bar [expr $jNodeTag_2+3] [expr $jNodeTag_2+5];
+	rigidLink bar [expr $jNodeTag_2+4] [expr $jNodeTag_2+6];
+	rigidLink bar [expr $jNodeTag_2+5] [expr $jNodeTag_2+7];
+	rigidLink bar [expr $jNodeTag_2+6] [expr $jNodeTag_2+8];
 
 	
 	# ##########################################################
