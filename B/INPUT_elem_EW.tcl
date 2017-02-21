@@ -38,8 +38,12 @@ for {set i 1} {$i <= $nStory} {incr i 1} {
 	# Add element as per element command in OpenSees Wiki, and write element command line to $ExportID
 	# element ElementType ElementTag iNodeTag_1 jNodeTag_1 ........ (see uploaded Tutorial PDF file for ElementTag)
 	# considering concrete crack
-	element elasticBeamColumn [expr 1000*$i + 100 + 1] $iNodeTag_1 $jNodeTag_1 $Acol [expr 0.2*$E] $G $Jcol $Iycol $Izcol $transfTagCol;
-	element elasticBeamColumn [expr 1000*$i + 200 + 1] $iNodeTag_2 $jNodeTag_2 $Acol [expr 0.5*$E] $G $Jcol $Iycol $Izcol $transfTagCol;
+
+	# element elasticBeamColumn [expr 1000*$i + 100 + 1] $iNodeTag_1 $jNodeTag_1 $Acol [expr 0.3*$E] $G $Jcol $Iycol $Izcol $transfTagCol;
+	# element elasticBeamColumn [expr 1000*$i + 200 + 1] $iNodeTag_2 $jNodeTag_2 $Acol [expr 0.3*$E] $G $Jcol $Iycol $Izcol $transfTagCol;
+	
+	element dispBeamColumn [expr 1000*$i + 100 + 1] $iNodeTag_1 $jNodeTag_1 5 $ColsecTag_2 $transfTagCol -integration Lobatto;
+	element dispBeamColumn [expr 1000*$i + 200 + 1] $iNodeTag_2 $jNodeTag_2 5 $ColsecTag_5 $transfTagCol -integration Lobatto;
 	
 	# puts $ExportID "..."
 	puts $ExportID "element [expr 1000*$i + 100 + 1] $iNodeTag_1 $jNodeTag_1;"

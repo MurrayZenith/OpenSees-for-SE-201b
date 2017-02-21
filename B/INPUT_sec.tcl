@@ -10,6 +10,13 @@ set Jcol 	[expr 1/3.0*pow(16,3)*(236.0+132.0*2)];#in4
 # puts $Iycol
 # puts $Jcol
 
+set ColsecTag_2 1;
+set ColsecTag_5 2;
+set ColsecTag_3 3;
+section Elastic $ColsecTag_2 [expr 0.2*$E] $Acol $Izcol $Iycol $G $Jcol;
+section Elastic $ColsecTag_5 [expr 0.5*$E] $Acol $Izcol $Iycol $G $Jcol;
+section Elastic $ColsecTag_3 [expr 0.3*$E] $Acol $Izcol $Iycol $G $Jcol;
+
 # coupling beam
 set Ibeam 	[expr 1/12.0*16*pow(48,3)];#in4
 set phi [expr 12.0*$E*$Ibeam/($G*640.00*pow(64.00,2))];

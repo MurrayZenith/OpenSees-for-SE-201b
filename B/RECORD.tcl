@@ -8,8 +8,8 @@ for {set i 1} {$i <= $nStory} {incr i 1} {
 }
 
 
-recorder Element -file $dataDir/BaseWallForces.txt -time -ele [expr 1000*1 + 200 + 1] globalForce 
-recorder Element -file $dataDir/RoofCBForces.txt -time -ele [expr 1000*$nStory + 1] axialForce
+recorder Element -file $dataDir/BaseWallForces.txt -time -ele [expr 1000*1 + 100 + 1] [expr 1000*1 + 200 + 1] globalForce 
+recorder Element -file $dataDir/RoofCBForces.txt -time -ele [expr 1000*$nStory + 1] [expr 1000*1 + 1] globalForce
 
 
 

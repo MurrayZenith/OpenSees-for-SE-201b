@@ -67,24 +67,8 @@
 			"file": "HW3.tcl",
 			"settings":
 			{
-				"buffer_size": 2547,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "PO.tcl",
-			"settings":
-			{
-				"buffer_size": 4686,
+				"buffer_size": 2549,
 				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "GRAVITY.tcl",
-			"settings":
-			{
-				"buffer_size": 1180,
 				"line_ending": "Windows"
 			}
 		}
@@ -182,6 +166,8 @@
 	},
 	"file_history":
 	[
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW3/A/GRAVITY.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW3/A/PO.tcl",
 		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW3/A/INPUT_elem.tcl",
 		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW/INPUT_sec.tcl",
 		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW/INPUT_mat.tcl",
@@ -304,15 +290,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2547,
+						"buffer_size": 2549,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1657,
-								1657
+								970,
+								970
 							]
 						],
 						"settings":
@@ -320,68 +306,10 @@
 							"syntax": "Packages/OpenSees/OpenSees.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 342.0,
+						"translation.y": 285.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "PO.tcl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4686,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/OpenSees/OpenSees.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "GRAVITY.tcl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1180,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/OpenSees/OpenSees.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
 					"type": "text"
 				}
 			]

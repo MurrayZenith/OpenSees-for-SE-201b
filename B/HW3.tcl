@@ -27,7 +27,7 @@ puts "MODEL SET-UP OK"
 
 
 set pushDir "NS";
-# set pushDir NS;
+# set pushDir "EW";
 
 
 # SET MODEL PARAMETERS ----------------------------------------------------------------------------------------------------------------------------------
