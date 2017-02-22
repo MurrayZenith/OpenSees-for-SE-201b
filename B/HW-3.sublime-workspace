@@ -84,7 +84,7 @@
 			"file": "RECORD.tcl",
 			"settings":
 			{
-				"buffer_size": 1049,
+				"buffer_size": 1164,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -108,6 +108,14 @@
 			}
 		},
 		{
+			"file": "GRAVITY.tcl",
+			"settings":
+			{
+				"buffer_size": 1180,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "INPUT_elem_NS.tcl",
 			"settings":
 			{
@@ -117,10 +125,35 @@
 			}
 		},
 		{
+			"file": "INPUT_mat.tcl",
+			"settings":
+			{
+				"buffer_size": 309,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "INPUT_nodes.tcl",
+			"settings":
+			{
+				"buffer_size": 5517,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "INPUT_sec.tcl",
 			"settings":
 			{
 				"buffer_size": 968,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW3/C/Linear/PO.tcl",
+			"settings":
+			{
+				"buffer_size": 4695,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -219,6 +252,7 @@
 	},
 	"file_history":
 	[
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW3/A/INPUT_sec.tcl",
 		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW3/B/PO.tcl",
 		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW3/B/GRAVITY.tcl",
 		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW3/B/INPUT_elem.tcl",
@@ -334,7 +368,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -350,8 +384,8 @@
 						"selection":
 						[
 							[
-								534,
-								534
+								990,
+								990
 							]
 						],
 						"settings":
@@ -359,10 +393,10 @@
 							"syntax": "Packages/OpenSees/OpenSees.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 171.0,
+						"translation.y": 29.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
@@ -371,15 +405,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1049,
+						"buffer_size": 1164,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1164,
+								1164
 							]
 						],
 						"settings":
@@ -390,7 +424,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -415,17 +449,17 @@
 							"syntax": "Packages/OpenSees/OpenSees.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
-						"translation.y": 1197.0,
+						"translation.x": 162.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 9,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 6,
 			"sheets":
 			[
 				{
@@ -441,12 +475,8 @@
 						"selection":
 						[
 							[
-								1557,
-								1557
-							],
-							[
-								1681,
-								1681
+								1572,
+								1591
 							]
 						],
 						"settings":
@@ -454,15 +484,44 @@
 							"syntax": "Packages/OpenSees/OpenSees.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 383.0,
-						"translation.y": 513.0,
+						"translation.x": 135.0,
+						"translation.y": 1659.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 4,
+					"file": "GRAVITY.tcl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1180,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								448,
+								448
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/OpenSees/OpenSees.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
 					"file": "INPUT_elem_NS.tcl",
 					"semi_transient": false,
 					"settings":
@@ -474,8 +533,8 @@
 						"selection":
 						[
 							[
-								813,
-								813
+								1557,
+								1557
 							]
 						],
 						"settings":
@@ -483,15 +542,72 @@
 							"syntax": "Packages/OpenSees/OpenSees.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 229.0,
-						"translation.y": 342.0,
+						"translation.x": 614.0,
+						"translation.y": 523.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
+					"file": "INPUT_mat.tcl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 309,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								124,
+								107
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/OpenSees/OpenSees.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "INPUT_nodes.tcl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5517,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/OpenSees/OpenSees.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
 					"file": "INPUT_sec.tcl",
 					"semi_transient": false,
 					"settings":
@@ -503,16 +619,8 @@
 						"selection":
 						[
 							[
-								545,
-								545
-							],
-							[
-								618,
-								618
-							],
-							[
-								691,
-								691
+								124,
+								86
 							]
 						],
 						"settings":
@@ -520,10 +628,38 @@
 							"syntax": "Packages/OpenSees/OpenSees.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 19.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW3/C/Linear/PO.tcl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4695,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/OpenSees/OpenSees.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -557,7 +693,7 @@
 		"cols":
 		[
 			0.0,
-			0.5,
+			0.477083333333,
 			1.0
 		],
 		"rows":
@@ -609,7 +745,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},

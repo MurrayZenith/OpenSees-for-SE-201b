@@ -71,6 +71,23 @@
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
+		},
+		{
+			"file": "RECORD.tcl",
+			"settings":
+			{
+				"buffer_size": 1164,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "INPUT_elem_EW.tcl",
+			"settings":
+			{
+				"buffer_size": 9033,
+				"line_ending": "Windows"
+			}
 		}
 	],
 	"build_system": "Packages/OpenSees/OpenSees.sublime-build",
@@ -166,6 +183,7 @@
 	},
 	"file_history":
 	[
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW3/A/RECORD.tcl",
 		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW3/A/GRAVITY.tcl",
 		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW3/A/PO.tcl",
 		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW3/A/INPUT_elem.tcl",
@@ -297,8 +315,8 @@
 						"selection":
 						[
 							[
-								970,
-								970
+								590,
+								590
 							]
 						],
 						"settings":
@@ -306,10 +324,67 @@
 							"syntax": "Packages/OpenSees/OpenSees.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 285.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "RECORD.tcl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1164,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								630,
+								630
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/OpenSees/OpenSees.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "INPUT_elem_EW.tcl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9033,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8136,
+								8552
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/OpenSees/OpenSees.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1944.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]

@@ -26,8 +26,8 @@ source UNITS.tcl;
 puts "MODEL SET-UP OK"
 
 
-set pushDir "NS";
-# set pushDir "EW";
+# set pushDir "NS";
+set pushDir "EW";
 
 
 # SET MODEL PARAMETERS ----------------------------------------------------------------------------------------------------------------------------------
