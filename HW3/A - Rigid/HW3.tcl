@@ -48,7 +48,7 @@ source "TRANSF.tcl"; # Sources the user defined file TRANSF.tcl which contains g
 puts "TRANSFORMATIONS OK"
 
 if {$pushDir == "EW"} {
-	source "INPUT_elem_EW.tcl";
+	source "INPUT_elem_EW_2.tcl";
 } elseif {$pushDir == "NS"} {
 	source "INPUT_elem_NS.tcl"
 }
