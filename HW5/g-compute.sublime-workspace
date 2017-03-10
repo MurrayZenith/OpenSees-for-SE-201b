@@ -1,0 +1,704 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fiber",
+				"section-Fiber"
+			],
+			[
+				"pa",
+				"patch circle"
+			],
+			[
+				"Displacem",
+				"DisplacmentControl"
+			],
+			[
+				"anal",
+				"analysis-dynamic"
+			],
+			[
+				"jNodeTag_",
+				"jNodeTag_1"
+			],
+			[
+				"exp",
+				"expr"
+			],
+			[
+				"jNo",
+				"jNodeTag_2"
+			],
+			[
+				"iNodeT",
+				"iNodeTag_2"
+			],
+			[
+				"jNodeT",
+				"jNodeTag_2"
+			],
+			[
+				"ri",
+				"rigidLink"
+			],
+			[
+				"ele",
+				"eleLoad(3D)"
+			],
+			[
+				"lappen",
+				"lappend"
+			],
+			[
+				"C_",
+				"C_dim5"
+			],
+			[
+				"Exp",
+				"ExportID"
+			],
+			[
+				"no",
+				"recorder-Node"
+			],
+			[
+				"elab",
+				"element-elasticBeamColumn(3D)"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "RunPM-0.004.tcl",
+			"settings":
+			{
+				"buffer_size": 4504,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "RunPM-0.003.tcl",
+			"settings":
+			{
+				"buffer_size": 4504,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "(f)/Cyclic_MK.tcl",
+			"settings":
+			{
+				"buffer_size": 10779,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Model.tcl",
+			"settings":
+			{
+				"buffer_size": 3278,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "(b)/Monotonic_MK-3-0.tcl",
+			"settings":
+			{
+				"buffer_size": 7229,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "(b)/Monotonic_MK-3-1.tcl",
+			"settings":
+			{
+				"buffer_size": 7229,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/OpenSees/OpenSees.sublime-build",
+					""
+				],
+				[
+					"Packages/OpenSees/OpenSees.sublime-build",
+					"Single Parallel"
+				],
+				[
+					"Packages/OpenSees/OpenSees.sublime-build",
+					"Multiple Parallel"
+				]
+			],
+			[
+				"Packages/OpenSees/OpenSees.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"packge ",
+				"Package Control: Enable Package"
+			],
+			[
+				"opense",
+				"Set Syntax: OpenSees Input"
+			],
+			[
+				"",
+				"Build With: OpenSees"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"incre",
+				"Increment Selection"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"packe",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"opensee",
+				"Set Syntax: OpenSees Input"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"gi",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 432.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/Git-HW/HW5/(b)/Monotonic_MK-3-4.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/Git-HW/HW5/(b)/Monotonic_MK-3-0.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/OpenSees Tutorial 3/P-M Analysis Example/RunPM.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/OpenSees Tutorial 3/P-M Analysis Example/Model.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/Git-HW/HW5/(d)/Cyclic_MK.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/Git-HW/HW5/RunPM-0.003.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/Git-HW/HW5/(a)/Monotonic_MK-1.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/Git-HW/HW5/RunPM.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/Git-HW/HW5/(f)/Cyclic_MK.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/Git-HW/HW5/Model.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/Git-HW/HW5/(b)/Monotonic_MK-3-2.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/Git-HW/HW3/A/RECORD.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/Git-HW/HW5/(d)/Cyclic_MK-e.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/OpenSees Tutorial 3/Cyclic_MK.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/OpenSees Tutorial 3/Monotonic_MK.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/Git-HW/HW5/(b)/Monotonic_MK-3-1.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/Git-HW/HW5/(b)/Monotonic_MK-3.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/Git-HW/HW5/(b)/Monotonic_MK-1.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/Git-HW/HW5/Monotonic_MK-2.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/Git-HW/HW5/Monotonic_MK-1.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/Git-HW/HW5/Monotonic_MK-3.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/Git-HW/HW5/Monotonic_MK.tcl",
+		"/C/Users/monds/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/monds/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/monds/AppData/Roaming/Sublime Text 3/Packages/Super Calculator/Default (Windows).sublime-keymap",
+		"/C/Users/monds/AppData/Roaming/Sublime Text 3/Packages/Super Calculator/Super Calculator.sublime-settings",
+		"/C/Users/monds/AppData/Roaming/Sublime Text 3/Packages/User/OpenSees.sublime-settings",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/Git-HW/HW5/a.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/Git-HW/HW5/a",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/Material for HW 3/Material for HW 3/Model Files/go.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/Git-HW/HW3/A/INPUT_elem_NS.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/Git-HW/HW3/A - Rigid/INPUT_elem_EW.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/OpenSees Tutorial 3/P-M-M Analysis Example/Model.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW3/C/RECORD.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW3/C/GRAVITY.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW3/C/PO.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW3/A/INPUT_elem.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW/INPUT_sec.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW/INPUT_mat.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW/INPUT_nodes.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW/RECORD.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW/TRANSF.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW/UNITS.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW/HW3.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW/GRAVITY.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW/INPUT_elem.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW/PO.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/Pushover_example/pushover_concentrated.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW3 from jintaoZ/partA/INPUT_nodes.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW3 from jintaoZ/partA/GRAVITY.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW3 from jintaoZ/partA/PO.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW3 from jintaoZ/partA/INPUT_elem.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/HW/from jintaoZ/partA/RECORDERS.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/HW/from jintaoZ/partA/PO.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/HW/from jintaoZ/partA/GRAVITY.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/HW/from jintaoZ/partA/INPUT_elem.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/HW/from jintaoZ/partA/INPUT_sec.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/HW/from jintaoZ/partA/INPUT_nodes.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/HW/from jintaoZ/partA/INPUT_mat.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/HW/from jintaoZ/partA/go.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/HW/from jintaoZ/partA/TRANSF.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/OpenSees Tutorial 1/OpenSees Tutorial 1/3D_Frame.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/Material for HW 3/Material for HW 3/Model Files/PO.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/Material for HW 3/Material for HW 3/Model Files/GRAVITY.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/Material for HW 3/Material for HW 3/Model Files/RECORDERS.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/OpenSees Tutorial 1/OpenSees Tutorial 1/gravity.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/Pushover_example/pushover_distributed.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW/test.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/Pushover_example/DisplayModel2D.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/Material for HW 3/Material for HW 3/Model Files/INPUT_elem.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/Material for HW 3/Material for HW 3/Model Files/INPUT_nodes.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/HW/record.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/Material for HW 3/Material for HW 3/Model Files/UNITS.tcl",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/OpenSees Tutorial 1/OpenSees Tutorial 1/UNITS.tcl",
+		"/C/Users/monds/AppData/Roaming/Sublime Text 3/Packages/User/Super Calculator.sublime-settings",
+		"/C/Users/monds/AppData/Roaming/Sublime Text 3/Packages/OpenSees/OpenSees.sublime-settings",
+		"/C/Users/monds/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/G/OneDrive - UC San Diego/Structures/201 B/OpenSees/test.tcl"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"criterion",
+			"d",
+			"nBars",
+			"colDepth",
+			"];\n",
+			"colDepth",
+			"disp",
+			"recorder Element -file Cyclic.txt -time -ele 1 globalForce",
+			"while",
+			"controlNode",
+			"*$",
+			"$*",
+			"pattern",
+			"dsaexpr",
+			"    layer straight $steel $nBars $As [expr $y1-$cover] [expr $z1-$cover] [expr $y1-$cover] [expr $cover-$z1]\n",
+			"steel",
+			"Cover",
+			"$P",
+			"P",
+			"p",
+			"P",
+			"p",
+			"P",
+			";     ",
+			"D",
+			"d",
+			"Concrete01",
+			"criterion",
+			"Flag",
+			"analyze",
+			"fileID",
+			"Flag",
+			"getTime",
+			"gettime",
+			"eleResponse",
+			"getTime",
+			"Flag",
+			"iMy",
+			"criterion",
+			"Broyden",
+			"criterion",
+			"run",
+			"controlDOF",
+			"Izcol",
+			";\n",
+			"gravity",
+			"RCM",
+			"midfloorload",
+			"topfloorload",
+			"\telement truss [expr 1000*$i + 1] [expr $jNodeTag_1+5] [expr $jNodeTag_2+7] $Atruss $Eqtruss\n\telement truss [expr 1000*$i + 2] [expr $jNodeTag_1+6] [expr $jNodeTag_2+8] $Atruss $Eqtruss\n\telement truss [expr 1000*$i + 3] [expr $jNodeTag_2+5] [expr $jNodeTag_1+7] $Atruss $Eqtruss\n\telement truss [expr 1000*$i + 4] [expr $jNodeTag_2+6] [expr $jNodeTag_1+8] $Atruss $Eqtruss\n",
+			"jNodeTag_previousFloor_lastElement",
+			"jNodeTag",
+			"iNodeTag",
+			"\tnode [expr 1000*i+100+$j+1] 0.0 $C_dim1 $height;\n\tnode [expr 1000*i+100+$j+2] 0.0 -$C_dim1 $height;\n\tnode [expr 1000*i+100+$j+3] $C_dim2 $C_dim1 $height;\n\tnode [expr 1000*i+100+$j+4] -$C_dim2 -$C_dim1 $height;\n\tnode [expr 1000*i+100+$j+5] $C_dim2 $C_dim1 [expr $height-$C_dim3];\n\tnode [expr 1000*i+100+$j+6] -$C_dim2 -$C_dim1 [expr $height-$C_dim3];\n\tnode [expr 1000*i+100+$j+7] $C_dim2 $C_dim1 [expr $height-$C_dim3-$C_dim4];\n\tnode [expr 1000*i+100+$j+8] -$C_dim2 -$C_dim1 [expr $height-$C_dim3-$C_dim4];\n",
+			"\n\tnode [expr 1000*i+100+$j+1] 0.0 $C_dim1 $height;\n\tnode [expr 1000*i+100+$j+2] 0.0 -$C_dim1 $height;\n\tnode [expr 1000*i+100+$j+3] $C_dim2 $C_dim1 $height;\n\tnode [expr 1000*i+100+$j+4] -$C_dim2 -$C_dim1 $height;\n\tnode [expr 1000*i+100+$j+5] $C_dim2 $C_dim1 [expr $height-$C_dim3];\n\tnode [expr 1000*i+100+$j+6] -$C_dim2 -$C_dim1 [expr $height-$C_dim3];\n\tnode [expr 1000*i+100+$j+7] $C_dim2 $C_dim1 [expr $height-$C_dim3-$C_dim4];\n\tnode [expr 1000*i+100+$j+8] -$C_dim2 -$C_dim1 [expr $height-$C_dim3-$C_dim4];",
+			"C_dim3",
+			"height",
+			"\tnode [expr 1000*i+100+$j+1] 0.0 $C_dim1 $height;\n\tnode [expr 1000*i+100+$j+2] 0.0 -$C_dim1 $height;",
+			"height",
+			"j",
+			"i",
+			"C_dim4",
+			" \n",
+			"C_dim5",
+			"mu",
+			"ft",
+			".*$",
+			"}\n",
+			"set ewlength expr{11*$ft+8*$in}\n",
+			"topfloorrload",
+			"sa",
+			"node",
+			" ",
+			"1",
+			"source dsdas.tcl\nset a 12\nset b 26\n$a - $b",
+			" "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "RunPM-0.004.tcl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4504,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3908,
+								3908
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/OpenSees/OpenSees.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2448.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "RunPM-0.003.tcl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4504,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1485,
+								1485
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/OpenSees/OpenSees.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 792.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "(f)/Cyclic_MK.tcl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10779,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4774,
+								4713
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/OpenSees/OpenSees.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2006.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Model.tcl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3278,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								347,
+								347
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/OpenSees/OpenSees.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 39.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"file": "(b)/Monotonic_MK-3-0.tcl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7229,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4362,
+								4362
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/OpenSees/OpenSees.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2071.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "(b)/Monotonic_MK-3-1.tcl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7229,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1368,
+								1368
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/OpenSees/OpenSees.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 450.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 112.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 118.0
+	},
+	"pinned_build_system": "",
+	"project": "g-compute.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
