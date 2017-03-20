@@ -16,7 +16,7 @@ if {$pushDir == "EW"} {
 		for {set i 1} {$i <= $nStory} {incr i} {
 		
 			#load $nodeTag (ndf $LoadValues)
-			load [expr 1000*$i + 200 + $nEleFloor] [expr $i/($nStory*($nStory+1)/2.)] 0.0 0.0 0.0 0.0 0.0; #Wall 2
+			load [expr 1000*$i + 200 + $nEleFloor] [expr $i/($nStory*($nStory+1)/2.)] 0.0 0.0 0.0 0.0 0.0; #Wall 2 inverted triangular distribution
 			puts $ExportID "load [expr 1000*$i + 200 + $nEleFloor] [expr $i/($nStory*($nStory+1)/2.)] 0.0 0.0 0.0 0.0 0.0"
 			
 		};
