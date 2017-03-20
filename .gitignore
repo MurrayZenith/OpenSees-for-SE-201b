@@ -20,6 +20,9 @@ $RECYCLE.BIN/
 # analysis work
 *.txt
 
+# Assignment
+*.pdf
+
 # sublime group
 *.sublime-project
 *.sublime-workspace
