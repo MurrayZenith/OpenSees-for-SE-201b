@@ -64,7 +64,9 @@ for {set i 1} {$i <= $nStory} {incr i 1} {
 	}
 	# -----------------------------------------------------------------------------------------------------------------------------------------------------
 
-# forceBeamColumn	
+# forceBeamColumn
+# element forceBeamColumn $eleTag $iNode $jNode $numIntgrPts $secTag $transfTag <-mass $massDens> <-iter $maxIters $tol> <-integration $intType>
+
 
 	# Rigid elements in each floor --------------------------------------------------------------------------------------------------------------------
 	element elasticBeamColumn [expr 1000*$i + 100 + $nEleFloor + 1] [expr 1000*$i + 100 + $nEleFloor]		[expr 1000*$i + 100 + $nEleFloor + 1] $ARigid $Ec $Gc $JRigid $IyRigid $IzRigid $transfTagHorizRig
