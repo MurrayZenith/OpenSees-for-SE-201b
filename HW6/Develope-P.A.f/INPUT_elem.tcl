@@ -19,9 +19,9 @@ for {set i 1} {$i <= $nStory} {incr i 1} {
 
 	# First element of each floor ---------------------------------------------------------------------------------------------------------------------------
 	if {$eleTypeWall == "forceBeamColumn"} {
-		# element forceBeamColumn $eleTag 					$iNode $jNode 	$numIntgrPts $secTag $transfTag <-mass $massDens> <-iter $maxIters $tol> <-integration $intType>
-		element forceBeamColumn [expr 1000*$i + 100 + 1] 	$iNode1 $jNode1 2 			$secTagWall $transfTagVertLeft
-		element forceBeamColumn [expr 1000*$i + 200 + 1] 	$iNode2 $jNode2 2 			$secTagWall $transfTagVertRight
+		# element forceBeamColumn $eleTag 					$iNode $jNode 	$numIntgrPts 	$secTag $transfTag <-mass $massDens> <-iter $maxIters $tol> <-integration $intType>
+		element forceBeamColumn [expr 1000*$i + 100 + 1] 	$iNode1 $jNode1 $numIntgrPts	$secTagWall $transfTagVertLeft
+		element forceBeamColumn [expr 1000*$i + 200 + 1] 	$iNode2 $jNode2 $numIntgrPts	$secTagWall $transfTagVertRight
 		
 		puts $ExportID "element forceBeamColumn [expr 1000*$i + 100 + 1] $iNode1 $jNode1 $AWall $Ec $Gc $JWall $IyWall $IzWall $transfTagVertLeft"
 		puts $ExportID "element forceBeamColumn [expr 1000*$i + 200 + 1] $iNode2 $jNode2 $AWall $Ec $Gc $JWall $IyWall $IzWall $transfTagVertRight"
@@ -47,9 +47,9 @@ for {set i 1} {$i <= $nStory} {incr i 1} {
 		set jNode2 [expr 1000*$i + 200 + ($j + 1)];
 		
 		if {$eleTypeWall == "forceBeamColumn"} {
-			# element forceBeamColumn $eleTag 						$iNode $jNode 	$numIntgrPts $secTag $transfTag <-mass $massDens> <-iter $maxIters $tol> <-integration $intType>
-			element forceBeamColumn [expr 1000*$i + 100 + ($j + 1)] $iNode1 $jNode1 2 			$secTagWall	 $transfTagVertLeft
-			element forceBeamColumn [expr 1000*$i + 200 + ($j + 1)] $iNode2 $jNode2 2 			$secTagWall	 $transfTagVertRight
+			# element forceBeamColumn $eleTag 						$iNode $jNode 	$numIntgrPts 	$secTag $transfTag <-mass $massDens> <-iter $maxIters $tol> <-integration $intType>
+			element forceBeamColumn [expr 1000*$i + 100 + ($j + 1)] $iNode1 $jNode1 $numIntgrPts	$secTagWall	 $transfTagVertLeft
+			element forceBeamColumn [expr 1000*$i + 200 + ($j + 1)] $iNode2 $jNode2 $numIntgrPts	$secTagWall	 $transfTagVertRight
 			
 			puts $ExportID "element forceBeamColumn [expr 1000*$i + 100 + ($j + 1)] $iNode1 $jNode1 $AWall $Ec $Gc $JWall $IyWall $IzWall $transfTagVertLeft"
 			puts $ExportID "element forceBeamColumn [expr 1000*$i + 200 + ($j + 1)] $iNode2 $jNode2 $AWall $Ec $Gc $JWall $IyWall $IzWall $transfTagVertRight"

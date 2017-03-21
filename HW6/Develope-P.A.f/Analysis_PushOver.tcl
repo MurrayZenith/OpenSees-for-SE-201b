@@ -47,16 +47,21 @@ if {$pushDir == "EW"} {
 # ###################################################################  DEFINE DISPLACEMENT CYCLES  ##############################################################################
 # ###############################################################################################################################################################################
 
-set cyclelabel {1 2 3 4}; # How many cycles.
+set cyclelabel {1 2 3 4 5 6 7 8 9}; # How many cycles.
 
 set d1 [expr 0.005*$buildingHeight]; # Peak displacement of cycle 1 ------ Value of Roof Displacement, NOT drift!!!!
 set d2 [expr -0.005*$buildingHeight]; # Peak displacement of cycle 2 ------ Value of Roof Displacement, NOT drift!!!!
 set d3 [expr 0.01*$buildingHeight]; # Peak displacement of cycle 3 ------ Value of Roof Displacement, NOT drift!!!!
 set d4 [expr -0.01*$buildingHeight]; # Peak displacement of cycle 4 ------ Value of Roof Displacement, NOT drift!!!!
+set d5 [expr 0.02*$buildingHeight]; # Peak displacement of cycle 5 ------ Value of Roof Displacement, NOT drift!!!!
+set d6 [expr -0.02*$buildingHeight]; # Peak displacement of cycle 6 ------ Value of Roof Displacement, NOT drift!!!!
+set d7 [expr 0.025*$buildingHeight]; # Peak displacement of cycle 7 ------ Value of Roof Displacement, NOT drift!!!!
+set d8 [expr -0.025*$buildingHeight]; # Peak displacement of cycle 8 ------ Value of Roof Displacement, NOT drift!!!!
+set d9 [expr 0.0*$buildingHeight]; # Peak displacement of cycle 9 ------ Value of Roof Displacement, NOT drift!!!!
 
 
 
-set peakDisp {$d1 $d2 $d3 $d4};
+set peakDisp {$d1 $d2 $d3 $d4 $d5 $d6 $d7 $d8 $d9};
 
 
 set du [expr 1.0*$mm];			# Disp increment to be set

@@ -44,8 +44,8 @@ set storyH1 [expr 16.0*$ft];				# Height of 1st story
 set storyHup [expr 14.0*$ft];				# Height of remaining stories
 set storyH {StoryHeights $storyH1 $storyHup $storyHup $storyHup $storyHup $storyHup $storyHup $storyHup $storyHup $storyHup};
 set buildingHeight	[expr 1.*$storyH1 + ($nStory - 1)*$storyHup];
-# set eleTypeWall "elasticBeamColumn";                              
-# set eleTypeTruss "truss";                              
+set eleTypeWall "forceBeamColumn";          # forceBeamColumn / dispBeamColumn
+set eleTypeTruss "corotTruss";              # truss / corotTruss
 set numIntgrPts 2;							# number of integration points
 set nEleFloor 1;							# number of column elements per floor
 set C_dim1 [expr 9.1667*$ft];				# Dimensions of Core Wall (see picture CWallDims.jpeg)

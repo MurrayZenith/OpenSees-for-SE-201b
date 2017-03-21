@@ -35,7 +35,7 @@ set JBeam [expr 701.83*$in4];
 # }
 set secTagWall 1
 # section Fiber secTag <-GJ > {}
-section Fiber $secTagWall -GJ [expr $Gc*$JWall]{
+section Fiber $secTagWall -GJ [expr $Gc*$JWall] {
     # Create the concrete fibers
     # Area Orange
     set z_dim [expr 148.0 - $C_dim2 - 16.0]
@@ -77,7 +77,7 @@ section Fiber $secTagBeam {
 	# patch   rect	$ConcMatTagBeam	1		1			-116.25	[expr -$C_dim2+1.75]	-103.75	[expr -$C_dim2+25.75]
 	#fiber	$yLoc	$zLoc	$A			$matTag
 	fiber	0.0 	0.0 	$ATruss		$ConcMatTagBeam
-	fiber	0.0 	0.0 	[expr 4*0.6s]	$StelMatTag
+	fiber	0.0 	0.0 	[expr 4*0.6]	$StelMatTag
 }
 
 # RIGID LINK SECTION PROPERTIES --------------------------------------------------------------------------
