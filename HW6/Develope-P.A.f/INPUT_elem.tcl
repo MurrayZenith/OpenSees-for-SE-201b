@@ -20,11 +20,11 @@ for {set i 1} {$i <= $nStory} {incr i 1} {
 	# First element of each floor ---------------------------------------------------------------------------------------------------------------------------
 	if {$eleTypeWall == "forceBeamColumn"} {
 		# element forceBeamColumn $eleTag 					$iNode $jNode 	$numIntgrPts 	$secTag $transfTag <-mass $massDens> <-iter $maxIters $tol> <-integration $intType>
-		element forceBeamColumn [expr 1000*$i + 100 + 1] 	$iNode1 $jNode1 $numIntgrPts	$secTagWall $transfTagVertLeft
-		element forceBeamColumn [expr 1000*$i + 200 + 1] 	$iNode2 $jNode2 $numIntgrPts	$secTagWall $transfTagVertRight
+		element forceBeamColumn [expr 1000*$i + 100 + 1] 	$iNode1 $jNode1 $numIntgrPts	$secTagWall $transfTagVertLeft	-integration Lobatto
+		element forceBeamColumn [expr 1000*$i + 200 + 1] 	$iNode2 $jNode2 $numIntgrPts	$secTagWall $transfTagVertRight	-integration Lobatto
 		
-		puts $ExportID "element forceBeamColumn [expr 1000*$i + 100 + 1] $iNode1 $jNode1 $AWall $Ec $Gc $JWall $IyWall $IzWall $transfTagVertLeft"
-		puts $ExportID "element forceBeamColumn [expr 1000*$i + 200 + 1] $iNode2 $jNode2 $AWall $Ec $Gc $JWall $IyWall $IzWall $transfTagVertRight"
+		puts $ExportID "element forceBeamColumn [expr 1000*$i + 100 + 1] $iNode1 $jNode1 $numIntgrPts $secTagWall $transfTagVertLeft	-integration Lobatto"
+		puts $ExportID "element forceBeamColumn [expr 1000*$i + 200 + 1] $iNode2 $jNode2 $numIntgrPts $secTagWall $transfTagVertRight	-integration Lobatto"
 		
 	} elseif {$eleTypeWall == "dispBeamColumn"} {
 		element dispBeamColumn [expr 1000*$i + 100 + 1] $iNode1 $jNode1 $numIntgrPts $secTagWall $transfTagVertLeft -integration Lobatto
@@ -48,11 +48,11 @@ for {set i 1} {$i <= $nStory} {incr i 1} {
 		
 		if {$eleTypeWall == "forceBeamColumn"} {
 			# element forceBeamColumn $eleTag 						$iNode $jNode 	$numIntgrPts 	$secTag $transfTag <-mass $massDens> <-iter $maxIters $tol> <-integration $intType>
-			element forceBeamColumn [expr 1000*$i + 100 + ($j + 1)] $iNode1 $jNode1 $numIntgrPts	$secTagWall	 $transfTagVertLeft
-			element forceBeamColumn [expr 1000*$i + 200 + ($j + 1)] $iNode2 $jNode2 $numIntgrPts	$secTagWall	 $transfTagVertRight
-			
-			puts $ExportID "element forceBeamColumn [expr 1000*$i + 100 + ($j + 1)] $iNode1 $jNode1 $AWall $Ec $Gc $JWall $IyWall $IzWall $transfTagVertLeft"
-			puts $ExportID "element forceBeamColumn [expr 1000*$i + 200 + ($j + 1)] $iNode2 $jNode2 $AWall $Ec $Gc $JWall $IyWall $IzWall $transfTagVertRight"
+			element forceBeamColumn [expr 1000*$i + 100 + ($j + 1)] $iNode1 $jNode1 $numIntgrPts	$secTagWall	 $transfTagVertLeft		-integration Lobatto
+			element forceBeamColumn [expr 1000*$i + 200 + ($j + 1)] $iNode2 $jNode2 $numIntgrPts	$secTagWall	 $transfTagVertRight	-integration Lobatto
+		 -integration Lobatto	
+			puts $ExportID " -integration Lobattoelement forceBeamColumn [expr 1000*$i + 100 + ($j + 1)] $iNode1 $jNode1 $numIntgrPts $secTagWall $transfTagVertLeft -integration Lobatto"
+			puts $ExportID "element forceBeamColumn [expr 1000*$i + 200 + ($j + 1)] $iNode2 $jNode2 $numIntgrPts $secTagWall $transfTagVertRight -integration Lobatto"
 		
 		} elseif {$eleTypeWall == "dispBeamColumn"} {
 		

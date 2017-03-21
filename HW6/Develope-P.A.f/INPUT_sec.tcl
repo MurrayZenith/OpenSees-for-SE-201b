@@ -41,20 +41,31 @@ section Fiber $secTagWall -GJ [expr $Gc*$JWall] {
     set z_dim [expr 148.0 - $C_dim2 - 16.0]
     #patch	rect	$matTag				$numSubdivY		$numSubdivZ	$yI		$zI			$yJ			$zJ              
     patch   rect	$UConcMatTagWall	60				5			-102.0	$z_dim		102.0		[expr $z_dim+16.0]
+    puts $ExportID "patch   rect	$UConcMatTagWall	60				5			-102.0	$z_dim		102.0		[expr $z_dim+16.0]"
     # Area Blue
     patch   rect	$UConcMatTagWall	5				30			-118.00	[expr -$C_dim2+25.75]	-102.0	[expr $z_dim+16.0]
+    puts $ExportID "patch   rect	$UConcMatTagWall	5				30			-118.00	[expr -$C_dim2+25.75]	-102.0	[expr $z_dim+16.0]"
     patch   rect	$UConcMatTagWall	5				30			102.0	[expr -$C_dim2+25.75]	118.0	[expr $z_dim+16.0]
+    puts $ExportID "patch   rect	$UConcMatTagWall	5				30			102.0	[expr -$C_dim2+25.75]	118.0	[expr $z_dim+16.0]"    
 	# Area Yellow
 	patch   rect	$UConcMatTagWall	2				5			-118.00	[expr -$C_dim2+1.75]	-116.25	[expr -$C_dim2+25.75]
+	puts $ExportID "patch   rect	$UConcMatTagWall	2				5			-118.00	[expr -$C_dim2+1.75]	-116.25	[expr -$C_dim2+25.75]"
 	patch   rect	$UConcMatTagWall	2				5			-103.75	[expr -$C_dim2+1.75]	-102.0	[expr -$C_dim2+25.75]
+	puts $ExportID "patch   rect	$UConcMatTagWall	2				5			-103.75	[expr -$C_dim2+1.75]	-102.0	[expr -$C_dim2+25.75]"
 	patch   rect	$UConcMatTagWall	2				5			102.0	[expr -$C_dim2+1.75]	103.75	[expr -$C_dim2+25.75]
+	puts $ExportID "patch   rect	$UConcMatTagWall	2				5			102.0	[expr -$C_dim2+1.75]	103.75	[expr -$C_dim2+25.75]"
 	patch   rect	$UConcMatTagWall	2				5			116.25	[expr -$C_dim2+1.75]	118.00	[expr -$C_dim2+25.75]
+	puts $ExportID "patch   rect	$UConcMatTagWall	2				5			116.25	[expr -$C_dim2+1.75]	118.00	[expr -$C_dim2+25.75]"
 	# Area purper
 	patch   rect	$UConcMatTagWall	5				2			-118.00	-$C_dim2	-102.0	[expr -$C_dim2+1.75]
+	puts $ExportID "patch   rect	$UConcMatTagWall	5				2			-118.00	-$C_dim2	-102.0	[expr -$C_dim2+1.75]"
 	patch   rect	$UConcMatTagWall	5				2			102.0	-$C_dim2	118.00	[expr -$C_dim2+1.75]
+	puts $ExportID "patch   rect	$UConcMatTagWall	5				2			102.0	-$C_dim2	118.00	[expr -$C_dim2+1.75]"
 	# Area Green Confined
 	patch   rect	$CConcMatTagWall	3				5			-116.25	[expr -$C_dim2+1.75]	-103.75	[expr -$C_dim2+25.75]
+	puts $ExportID "patch   rect	$CConcMatTagWall	3				5			-116.25	[expr -$C_dim2+1.75]	-103.75	[expr -$C_dim2+25.75]"
 	patch   rect	$CConcMatTagWall	3				5			103.75	[expr -$C_dim2+1.75]	116.25	[expr -$C_dim2+25.75]
+	puts $ExportID "patch   rect	$CConcMatTagWall	3				5			103.75	[expr -$C_dim2+1.75]	116.25	[expr -$C_dim2+25.75]"
 
     # Create the reinforcing fibers
     # layer straight $matTag $numFiber $areaFiber 			$yStart $zStart 				$yEnd 	$zEnd 
