@@ -14,13 +14,17 @@ for {set i 1} {$i <= $nStory} {incr i 1} {
 	set jNode1 [expr 1000*$i + 100 + 1];
 	set jNode2 [expr 1000*$i + 200 + 1];
 	
+	# forceBeamColumn
+	# element forceBeamColumn $eleTag $iNode $jNode $numIntgrPts $secTag $transfTag <-mass $massDens> <-iter $maxIters $tol> <-integration $intType>
+
 	# First element of each floor ---------------------------------------------------------------------------------------------------------------------------
-	if {$eleTypeWall == "elasticBeamColumn"} {
-		element elasticBeamColumn [expr 1000*$i + 100 + 1] $iNode1 $jNode1 $AWall $Ec $Gc $JWall $IyWall $IzWall $transfTagVertLeft
-		element elasticBeamColumn [expr 1000*$i + 200 + 1] $iNode2 $jNode2 $AWall $Ec $Gc $JWall $IyWall $IzWall $transfTagVertRight
+	if {$eleTypeWall == "forceBeamColumn"} {
+		# element forceBeamColumn $eleTag 					$iNode $jNode 	$numIntgrPts $secTag $transfTag <-mass $massDens> <-iter $maxIters $tol> <-integration $intType>
+		element forceBeamColumn [expr 1000*$i + 100 + 1] 	$iNode1 $jNode1 2 			$secTagWall $transfTagVertLeft
+		element forceBeamColumn [expr 1000*$i + 200 + 1] 	$iNode2 $jNode2 2 			$secTagWall $transfTagVertRight
 		
-		puts $ExportID "element elasticBeamColumn [expr 1000*$i + 100 + 1] $iNode1 $jNode1 $AWall $Ec $Gc $JWall $IyWall $IzWall $transfTagVertLeft"
-		puts $ExportID "element elasticBeamColumn [expr 1000*$i + 200 + 1] $iNode2 $jNode2 $AWall $Ec $Gc $JWall $IyWall $IzWall $transfTagVertRight"
+		puts $ExportID "element forceBeamColumn [expr 1000*$i + 100 + 1] $iNode1 $jNode1 $AWall $Ec $Gc $JWall $IyWall $IzWall $transfTagVertLeft"
+		puts $ExportID "element forceBeamColumn [expr 1000*$i + 200 + 1] $iNode2 $jNode2 $AWall $Ec $Gc $JWall $IyWall $IzWall $transfTagVertRight"
 		
 	} elseif {$eleTypeWall == "dispBeamColumn"} {
 		element dispBeamColumn [expr 1000*$i + 100 + 1] $iNode1 $jNode1 $numIntgrPts $secTagWall $transfTagVertLeft -integration Lobatto
@@ -42,13 +46,13 @@ for {set i 1} {$i <= $nStory} {incr i 1} {
 		set jNode1 [expr 1000*$i + 100 + ($j + 1)];
 		set jNode2 [expr 1000*$i + 200 + ($j + 1)];
 		
-		if {$eleTypeWall == "elasticBeamColumn"} {
-		
-			element elasticBeamColumn [expr 1000*$i + 100 + ($j + 1)] $iNode1 $jNode1 $AWall $Ec $Gc $JWall $IyWall $IzWall $transfTagVertLeft
-			element elasticBeamColumn [expr 1000*$i + 200 + ($j + 1)] $iNode2 $jNode2 $AWall $Ec $Gc $JWall $IyWall $IzWall $transfTagVertRight
+		if {$eleTypeWall == "forceBeamColumn"} {
+			# element forceBeamColumn $eleTag 						$iNode $jNode 	$numIntgrPts $secTag $transfTag <-mass $massDens> <-iter $maxIters $tol> <-integration $intType>
+			element forceBeamColumn [expr 1000*$i + 100 + ($j + 1)] $iNode1 $jNode1 2 			$secTagWall	 $transfTagVertLeft
+			element forceBeamColumn [expr 1000*$i + 200 + ($j + 1)] $iNode2 $jNode2 2 			$secTagWall	 $transfTagVertRight
 			
-			puts $ExportID "element elasticBeamColumn [expr 1000*$i + 100 + ($j + 1)] $iNode1 $jNode1 $AWall $Ec $Gc $JWall $IyWall $IzWall $transfTagVertLeft"
-			puts $ExportID "element elasticBeamColumn [expr 1000*$i + 200 + ($j + 1)] $iNode2 $jNode2 $AWall $Ec $Gc $JWall $IyWall $IzWall $transfTagVertRight"
+			puts $ExportID "element forceBeamColumn [expr 1000*$i + 100 + ($j + 1)] $iNode1 $jNode1 $AWall $Ec $Gc $JWall $IyWall $IzWall $transfTagVertLeft"
+			puts $ExportID "element forceBeamColumn [expr 1000*$i + 200 + ($j + 1)] $iNode2 $jNode2 $AWall $Ec $Gc $JWall $IyWall $IzWall $transfTagVertRight"
 		
 		} elseif {$eleTypeWall == "dispBeamColumn"} {
 		
@@ -63,9 +67,6 @@ for {set i 1} {$i <= $nStory} {incr i 1} {
 		
 	}
 	# -----------------------------------------------------------------------------------------------------------------------------------------------------
-
-# forceBeamColumn
-# element forceBeamColumn $eleTag $iNode $jNode $numIntgrPts $secTag $transfTag <-mass $massDens> <-iter $maxIters $tol> <-integration $intType>
 
 
 	# Rigid elements in each floor --------------------------------------------------------------------------------------------------------------------
@@ -123,16 +124,16 @@ for {set i 1} {$i <= $nStory} {incr i 1} {
 		puts $ExportID "element truss [expr 1000*$i + 4] [expr 1000*$i + 100 + $nEleFloor + 8] [expr 1000*$i + 200 + $nEleFloor + 6] $ATruss $ConcMatTagBeam"
 	
 	} elseif {$eleTypeTruss == "corotTruss"} {
-	
-		element corotTruss [expr 1000*$i + 1] [expr 1000*$i + 100 + $nEleFloor + 5] [expr 1000*$i + 200 + $nEleFloor + 7] $ATruss $ConcMatTagBeam
-		element corotTruss [expr 1000*$i + 2] [expr 1000*$i + 100 + $nEleFloor + 6] [expr 1000*$i + 200 + $nEleFloor + 8] $ATruss $ConcMatTagBeam
-		element corotTruss [expr 1000*$i + 3] [expr 1000*$i + 100 + $nEleFloor + 7] [expr 1000*$i + 200 + $nEleFloor + 5] $ATruss $ConcMatTagBeam
-		element corotTruss [expr 1000*$i + 4] [expr 1000*$i + 100 + $nEleFloor + 8] [expr 1000*$i + 200 + $nEleFloor + 6] $ATruss $ConcMatTagBeam
+		# element corotTrussSection $eleTag 			$iNode 								$jNode 									$secTag <-rho $rho> <-cMass $cFlag> <-doRayleigh $rFlag> 
+		element corotTrussSection [expr 1000*$i + 1] [expr 1000*$i + 100 + $nEleFloor + 5] [expr 1000*$i + 200 + $nEleFloor + 7] $secTagBeam
+		element corotTrussSection [expr 1000*$i + 2] [expr 1000*$i + 100 + $nEleFloor + 6] [expr 1000*$i + 200 + $nEleFloor + 8] $secTagBeam
+		element corotTrussSection [expr 1000*$i + 3] [expr 1000*$i + 100 + $nEleFloor + 7] [expr 1000*$i + 200 + $nEleFloor + 5] $secTagBeam
+		element corotTrussSection [expr 1000*$i + 4] [expr 1000*$i + 100 + $nEleFloor + 8] [expr 1000*$i + 200 + $nEleFloor + 6] $secTagBeam
 		
-		puts $ExportID "element corotTruss [expr 1000*$i + 1] [expr 1000*$i + 100 + $nEleFloor + 5] [expr 1000*$i + 200 + $nEleFloor + 7] $ATruss $ConcMatTagBeam"
-		puts $ExportID "element corotTruss [expr 1000*$i + 2] [expr 1000*$i + 100 + $nEleFloor + 6] [expr 1000*$i + 200 + $nEleFloor + 8] $ATruss $ConcMatTagBeam"
-		puts $ExportID "element corotTruss [expr 1000*$i + 3] [expr 1000*$i + 100 + $nEleFloor + 7] [expr 1000*$i + 200 + $nEleFloor + 5] $ATruss $ConcMatTagBeam"
-		puts $ExportID "element corotTruss [expr 1000*$i + 4] [expr 1000*$i + 100 + $nEleFloor + 8] [expr 1000*$i + 200 + $nEleFloor + 6] $ATruss $ConcMatTagBeam"
+		puts $ExportID "element corotTrussSection [expr 1000*$i + 1] [expr 1000*$i + 100 + $nEleFloor + 5] [expr 1000*$i + 200 + $nEleFloor + 7] $ATruss $ConcMatTagBeam"
+		puts $ExportID "element corotTrussSection [expr 1000*$i + 2] [expr 1000*$i + 100 + $nEleFloor + 6] [expr 1000*$i + 200 + $nEleFloor + 8] $ATruss $ConcMatTagBeam"
+		puts $ExportID "element corotTrussSection [expr 1000*$i + 3] [expr 1000*$i + 100 + $nEleFloor + 7] [expr 1000*$i + 200 + $nEleFloor + 5] $ATruss $ConcMatTagBeam"
+		puts $ExportID "element corotTrussSection [expr 1000*$i + 4] [expr 1000*$i + 100 + $nEleFloor + 8] [expr 1000*$i + 200 + $nEleFloor + 6] $ATruss $ConcMatTagBeam"
 	
 	}
 
