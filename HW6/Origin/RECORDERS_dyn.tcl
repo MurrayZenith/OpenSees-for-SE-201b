@@ -9,7 +9,7 @@ file mkdir $ResultsDirectory;
 set controlDOF 1;
 set controlNode [expr 1000*$nStory + 200 + $nEleFloor];
 
-recorder Node -file $ResultsDirectory/Reaction.txt -time -node 1100 1200 -dof $controlDOF reaction
+recorder Node -file $ResultsDirectory/Reaction.txt -time -node 1100 1200 -dof $controlDOF 5 reaction
 recorder Node -file $ResultsDirectory/Disp.txt -time -node $controlNode -dof $controlDOF disp
 
 recorder Element -file $ResultsDirectory/SecF_W1_base.txt -time -ele 1101 section 1 force 		; # N_x 	M_y 	M_z 	Torsion
