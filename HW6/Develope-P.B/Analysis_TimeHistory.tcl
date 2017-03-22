@@ -46,7 +46,7 @@ puts $gAccYFile [expr [lindex $GMDataAllY [expr $i + 1]]];
 close $gAccYFile
 
 
-set DtAnalysis	   		[expr $dt/0.5];	# time-step Dt for lateral analysis
+set DtAnalysis	   		[expr $dt/1.];	# time-step Dt for lateral analysis
 set TmaxAnalysis	 	[expr $dt*$NPTS]; # duration of earthquake
 
 # ###################################################################################################################################################################################################
@@ -71,9 +71,9 @@ if {$DoModalAnalysis == "Yes"} {
 
 # define DAMPING
 # D=$alphaM*M + $betaKcurr*Kcurrent + $betaKcomm*KlastCommit + $beatKinit*$Kinitial
-set ksi 0.025; # 2.5% damping ratio
-set alphaM    [expr 2.*$ksi*$w1*$w2/($w1+$w2)];	
-set betaKinit [expr 2.*$ksi/($w1+$w2)];         
+set zeta 0.02; # 2.0% damping ratio
+set alphaM    [expr 2.*$zeta*$w1*$w2/($w1+$w2)];	
+set betaKinit [expr 2.*$zeta/($w1+$w2)];         
 set betaKcurr 0.0; 			
 set betaKcomm 0.0;
 rayleigh $alphaM $betaKcurr $betaKinit $betaKcomm

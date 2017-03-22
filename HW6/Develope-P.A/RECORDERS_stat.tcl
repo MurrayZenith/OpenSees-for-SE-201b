@@ -10,8 +10,8 @@ file mkdir $ResultsDirectory;
 recorder Node -file $ResultsDirectory/Reaction.txt -time -node 1100 1200 -dof $controlDOF reaction
 recorder Node -file $ResultsDirectory/Disp.txt -time -node $controlNode -dof $controlDOF disp
 
-recorder Element -file $ResultsDirectory/SecF_W1_base.txt -ele 1101 section 1 force
-recorder Element -file $ResultsDirectory/SecD_W1_base.txt -ele 1101 section 1 deformation
+recorder Element -file $ResultsDirectory/SecF_W1_base.txt -ele 1101 section 1 force 		; # N_x 	M_y 	M_z 	Torsion
+recorder Element -file $ResultsDirectory/SecD_W1_base.txt -ele 1101 section 1 deformation 	; # eps_x 	kappa_y	kappa_z	Theta
 
 recorder Element -file $ResultsDirectory/SecF_W2_base.txt -ele 1201 section 1 force
 recorder Element -file $ResultsDirectory/SecD_W2_base.txt -ele 1201 section 1 deformation
