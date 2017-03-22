@@ -1,7 +1,7 @@
 # MASS ASSIGNMENT -----------------------------------------------------------------------------------------
-set topFloorMass 	[expr 15461*$lbf*pow($sec,2)/$ft];;
-set midfloorMass 	[expr 17294*$lbf*pow($sec,2)/$ft];
-set botFloorMass 	[expr 17702*$lbf*pow($sec,2)/$ft];
+set topFloorMass 	[expr 15461*$lbf*pow($sec,2)/$ft]; # 61844/4 = 15461.00
+set midfloorMass 	[expr 17294*$lbf*pow($sec,2)/$ft]; # 69176/4 = 17294.00
+set botFloorMass 	[expr 17702*$lbf*pow($sec,2)/$ft]; # 70808/4 = 17702.00
 
 for {set i 1} {$i <= $nStory} {incr i} {
 	
