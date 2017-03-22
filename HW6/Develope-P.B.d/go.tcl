@@ -44,8 +44,8 @@ set storyH1 [expr 16.0*$ft];				# Height of 1st story
 set storyHup [expr 14.0*$ft];				# Height of remaining stories
 set storyH {StoryHeights $storyH1 $storyHup $storyHup $storyHup $storyHup $storyHup $storyHup $storyHup $storyHup $storyHup};
 set buildingHeight	[expr 1.*$storyH1 + ($nStory - 1)*$storyHup];
-set eleTypeWall "elasticBeamColumn";                              
-set eleTypeTruss "truss";                              
+set eleTypeWall "forceBeamColumn";          # forceBeamColumn / dispBeamColumn
+set eleTypeTruss "corotTruss";              # truss / corotTruss
 set numIntgrPts 2;							# number of integration points
 set nEleFloor 1;							# number of column elements per floor
 set C_dim1 [expr 9.1667*$ft];				# Dimensions of Core Wall (see picture CWallDims.jpeg)
@@ -58,6 +58,7 @@ set GravityAnalysisDone "No";
 set DoModalAnalysis "Yes";
 set modes 10;								# how many modes?
 
+# Using P-D as question asked
 set gT "Linear";							# Choose between Linear, PDelta, and Corotational
 
 set analysisType "TimeHistory";				# Choose between PushOver, and TimeHistory
@@ -69,11 +70,11 @@ set fpcFac  [expr 1.7];										# Factor to be multiplied to get expected mater
 set fpcNom  [expr 5.*$ksi];									# Nominal concrete strength
 set fpccNom  [expr 6.*$ksi];									# Nominal concrete strength
 
-set fyFac   [expr 69./60.];									# Factor to be multiplied to get expected material properties
+set fyFac   [expr 1.15];									# Factor to be multiplied to get expected material properties
 set fyNom   [expr 60.];										# Nominal steel yield strength
 
-set ConcMatTypeWall "LinearElastic"; 					# Choose between LinearElastic, Concrete01, Concrete02
-set ConcMatTypeBeam "LinearElastic";					# Choose between LinearElastic, Concrete01, Concrete02
+set ConcMatTypeWall "Concrete01"; 					# Choose between LinearElastic, Concrete01, Concrete02
+set ConcMatTypeBeam "Concrete02";					# Choose between LinearElastic, Concrete01, Concrete02
 
 
 # GEOMETRY/MATERIAL/SECTIONS --------------------------------------------------------------------------
