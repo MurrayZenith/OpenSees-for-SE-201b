@@ -57,7 +57,7 @@ set TmaxAnalysis	 	[expr $dt*$NPTS]; # duration of earthquake
 
 if {$DoModalAnalysis == "Yes"} {
 	set w1 [lindex $omega 0];	# omega heir from Analysis_Modal
-	set w2 [lindex $omega 3];
+	set w2 [lindex $omega 2];
 } else {
 	source "Analysis_Modal.tcl";
 	puts "Modal Analysis Results Post - Gravity"
@@ -66,7 +66,7 @@ if {$DoModalAnalysis == "Yes"} {
 		puts "T$i = [lindex $T [expr $i-1]]";
 	}
 	set w1 [lindex $omega 0];
-	set w2 [lindex $omega 3];
+	set w2 [lindex $omega 2];
 }
 
 # define DAMPING
